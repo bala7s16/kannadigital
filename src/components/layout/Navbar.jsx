@@ -39,7 +39,7 @@ const Navbar = () => {
                                 {link.name}
                             </Link>
                         ))}
-                        <a href={`tel:${BUSINESS_DETAILS.phone.replace(/ /g, '')}`} className="flex items-center gap-2 bg-brand-blue hover:bg-blue-600 text-white px-4 py-2 rounded-full transition-colors font-medium">
+                        <a href={`tel:${BUSINESS_DETAILS.branches[0].phone.replace(/ /g, '')}`} className="flex items-center gap-2 bg-brand-blue hover:bg-blue-600 text-white px-4 py-2 rounded-full transition-colors font-medium">
                             <Phone size={18} />
                             <span>Call Now</span>
                         </a>
@@ -72,9 +72,9 @@ const Navbar = () => {
                                     {link.name}
                                 </Link>
                             ))}
-                            <a href={`tel:${BUSINESS_DETAILS.phone.replace(/ /g, '')}`} className="flex items-center gap-2 text-brand-blue font-bold pt-4">
+                            <a href={`tel:${BUSINESS_DETAILS.branches[0].phone.replace(/ /g, '')}`} className="flex items-center gap-2 text-brand-blue font-bold pt-4">
                                 <Phone size={20} />
-                                {BUSINESS_DETAILS.phone}
+                                {BUSINESS_DETAILS.branches[0].phone}
                             </a>
                         </div>
                     </motion.div>

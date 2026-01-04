@@ -16,7 +16,7 @@ const Footer = () => {
                             <span className="text-white block font-medium">DIGITAL STUDIO</span>
                         </div>
                         <p className="text-slate-400 mb-6">
-                            Your one-stop destination for premium photography, large format printing, and digital services in Thoothukudi. Capturing memories, creating quality.
+                            Your one-stop destination for premium photography, large format printing, and digital services in Thoothukudi.
                         </p>
                         <div className="flex gap-4">
                             <a href="#" className="bg-slate-800 p-2 rounded-full text-slate-400 hover:text-white hover:bg-brand-blue transition-all">
@@ -49,28 +49,28 @@ const Footer = () => {
                             <li>Wedding Photography</li>
                             <li>A0/A1 Plan Printing</li>
                             <li>Digital Banners</li>
+                            <li>Mug & T-Shirt Printing</li>
                             <li>Frame Works</li>
                             <li>E-Seva Services</li>
-                            <li>ID Card Printing</li>
                         </ul>
                     </div>
 
-                    {/* Contact Info */}
+                    {/* Contact Info (Main Only) */}
                     <div>
                         <h3 className="text-white font-bold text-lg mb-6">Contact Us</h3>
                         <div className="space-y-4 text-slate-400">
                             <div className="flex items-start gap-3">
                                 <MapPin className="text-brand-yellow shrink-0 mt-1" size={18} />
-                                <p>{BUSINESS_DETAILS.address}</p>
+                                <p>{BUSINESS_DETAILS.branches[0].address}</p>
                             </div>
                             <div className="flex items-center gap-3">
                                 <Phone className="text-brand-yellow shrink-0" size={18} />
-                                <p>{BUSINESS_DETAILS.phone}</p>
+                                <p>{BUSINESS_DETAILS.branches[0].phone}</p>
                             </div>
                             <div className="flex items-center gap-3">
                                 <Clock className="text-brand-yellow shrink-0" size={18} />
                                 <div className="text-sm">
-                                    {BUSINESS_DETAILS.hours.map((h, i) => (
+                                    {BUSINESS_DETAILS.branches[0].hours.map((h, i) => (
                                         <p key={i}><span className="text-slate-300">{h.day}:</span> {h.time}</p>
                                     ))}
                                 </div>
