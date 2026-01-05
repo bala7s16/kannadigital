@@ -20,6 +20,13 @@ const Hero = () => {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8 }}
                 >
+                    <div className="mb-8">
+                        <img
+                            src="https://lh3.googleusercontent.com/gps-cs-s/AG0ilSz7v6D4Yd4WE7pojFb_5hmjyKuaZiy0p80AqLtb4WSKoc6jE2ryHpOwF8GFTgR-6z--UwXqh-ppbC3yxcBzn1BL6o_UleatI8JwJhnXGAN2xwo0ImShs5HdsXyaSgAD7l-T4cAm=w800-h800-k-no"
+                            alt="Kanna Digital Studio Logo"
+                            className="h-32 mx-auto rounded-xl shadow-2xl border-4 border-slate-800/50"
+                        />
+                    </div>
                     <span className="inline-block py-1 px-3 rounded-full bg-slate-800/50 border border-slate-700 text-brand-yellow text-sm font-medium mb-6">
                         Premier Photography & Printing Services in Thoothukudi
                     </span>

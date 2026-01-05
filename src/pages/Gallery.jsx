@@ -1,5 +1,9 @@
 import { motion } from 'framer-motion';
 
+import esevaImg from '../assets/eseva.png';
+import digitalBannerImg from '../assets/digital-banner.png';
+import customFramingImg from '../assets/custom-framing.png';
+
 const Gallery = () => {
     // Enhanced placeholder images that match the services (Mugs, Prints, Studio, etc.)
     const images = [
@@ -8,31 +12,31 @@ const Gallery = () => {
             title: "Professional Studio"
         },
         {
-            url: "https://images.unsplash.com/photo-1620916566398-39f1143ab7be?q=80&w=2574&auto=format&fit=crop", // More printing relevant (Plotter/Design)
+            url: "https://images.unsplash.com/photo-1693031630369-bd429a57f115?q=80&w=2574&auto=format&fit=crop", // More printing relevant (Plotter/Design)
             title: "Large Format Printing"
         },
         {
-            url: "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?q=80&w=2564&auto=format&fit=crop",
+            url: "https://images.unsplash.com/photo-1661259937764-13529d3cd2ea?q=80&w=2564&auto=format&fit=crop",
             title: "Camera Equipment"
         },
         {
-            url: "https://images.unsplash.com/photo-1513438205128-16af162ddc62?q=80&w=2670&auto=format&fit=crop", // Wedding/Album vibe
+            url: "https://images.unsplash.com/photo-1686294589755-98f2b8c45eae?q=80&w=2670&auto=format&fit=crop", // Wedding/Album vibe
             title: "Wedding Albums"
         },
         {
-            url: "https://images.unsplash.com/photo-1589330694653-4a8b243ea5aa?q=80&w=2670&auto=format&fit=crop", // Gov/Service center vibe
+            url: esevaImg, // Gov/Service center vibe
             title: "E-Seva Services"
         },
         {
-            url: "https://images.unsplash.com/photo-1632515998522-8d769c36643c?q=80&w=2670&auto=format&fit=crop", // Mug/Gifts if possible, or generic design
+            url: "https://images.unsplash.com/photo-1761065002774-050397f39af9?q=80&w=2670&auto=format&fit=crop", // Mug/Gifts if possible, or generic design
             title: "Personalized Gifts"
         },
         {
-            url: "https://images.unsplash.com/photo-1586075010923-2dd4570fb338?q=80&w=2574&auto=format&fit=crop", // Frames
+            url: customFramingImg, // Frames
             title: "Custom Framing"
         },
         {
-            url: "https://images.unsplash.com/photo-1452587925148-ce548e94a701?q=80&w=2574&auto=format&fit=crop", // Poster/Banner
+            url: digitalBannerImg, // Poster/Banner
             title: "Digital Banners"
         },
         {
@@ -69,6 +73,7 @@ const Gallery = () => {
                             <img
                                 src={img.url}
                                 alt={img.title}
+                                loading="lazy"
                                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 opacity-90 group-hover:opacity-100"
                             />
                             <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-300 flex items-end p-6">
