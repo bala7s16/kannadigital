@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import esevaImg from '../assets/eseva.png';
 import digitalBannerImg from '../assets/digital-banner.png';
 import customFramingImg from '../assets/custom-framing.png';
+import idCardImg from '../assets/id-card.png';
 
 const Gallery = () => {
     // Enhanced placeholder images that match the services (Mugs, Prints, Studio, etc.)
@@ -42,6 +43,10 @@ const Gallery = () => {
         {
             url: "https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?q=80&w=2669&auto=format&fit=crop", // Meeting/Business
             title: "Customer Support"
+        },
+        {
+            url: idCardImg, // ID Card
+            title: "ID Cards"
         }
     ];
 

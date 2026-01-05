@@ -97,11 +97,11 @@ const Contact = () => {
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                                 <div className="space-y-2">
                                     <label className="text-slate-400 text-sm font-medium">Your Name</label>
-                                    <input type="text" className="w-full bg-slate-950 border border-slate-800 rounded-lg px-4 py-3 text-white focus:ring-2 focus:ring-brand-blue focus:border-transparent outline-none transition-all" placeholder="John Doe" />
+                                    <input type="text" className="w-full bg-slate-950 border border-slate-800 rounded-lg px-4 py-3 text-white focus:ring-2 focus:ring-brand-blue focus:border-transparent outline-none transition-all" />
                                 </div>
                                 <div className="space-y-2">
                                     <label className="text-slate-400 text-sm font-medium">Phone Number</label>
-                                    <input type="text" className="w-full bg-slate-950 border border-slate-800 rounded-lg px-4 py-3 text-white focus:ring-2 focus:ring-brand-blue focus:border-transparent outline-none transition-all" placeholder="9876543210" />
+                                    <input type="text" className="w-full bg-slate-950 border border-slate-800 rounded-lg px-4 py-3 text-white focus:ring-2 focus:ring-brand-blue focus:border-transparent outline-none transition-all" />
                                 </div>
                             </div>
 
